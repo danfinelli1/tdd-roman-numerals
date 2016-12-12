@@ -9,7 +9,7 @@ class Converter
     [4, "IV"],
     [1, "I"]
   ]
-  def roman_convert(n)
+  def self.roman_convert(n)
     result = ""
     DIGITS.each do |limit, glyph|
       while n>=limit
